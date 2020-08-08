@@ -45,7 +45,7 @@
     </van-divider>
     <!-- 列表 -->
       <van-list
-      finished-text="没有更多了"
+       finished-text="没有更多了"
       :finished="finished"
       v-model="loading"
       @load="onLoad"
@@ -102,7 +102,7 @@ export default {
   data: function() {
     return {
       //  登陆
-       refreshing: false,
+      refreshing: false,
       list: [],
       page: 1,
       finished: false,
@@ -143,18 +143,19 @@ this.getList()
         page: this.page
       }
       this.$http.tuijian(params).then(res=>{
-        console.log('商品列表', res)
+        console.log('商品列表', res.list)
         if (res.length < 10) {
           Toast('没有更多了')
         }
         if (this.refreshing) {
-          this.list = res
+          this.list = res.list
         } else {
-          this.list = [...this.list, ...res]
+          this.list = [...this.list, ...res.list]
         }
         this.finished = false
         this.refreshing = false
         this.loading = false
+       
       })
     }
   }

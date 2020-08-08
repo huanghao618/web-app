@@ -30,8 +30,7 @@ const router = new VueRouter({
     {path:"/user",component:User},
     {path:"/login",component:Land},
     {path:"/register",component:Register},
-    { path: '/detail/:id', component: Detail, props: true },
-    
+    { path: '/detail/:id', component: Detail, props: true }
   ]
 })
 export default router
