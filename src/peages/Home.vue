@@ -11,7 +11,7 @@
     <!-- 搜索框 -->
     <van-search shape="round" background="#B20D07" :placeholder="tips" show-action disabled>
       <template #action>
-        <div class="login" @click="skipToLogin">登录</div>
+        <div class="login" @click="skipToLogin">登录首页</div>
       </template>
     </van-search>
     <!-- 轮播图 -->
