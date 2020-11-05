@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>我的</h1>
+    <h1>我的1</h1>
     <!-- 底部 -->
     <TabBar></TabBar>
   </div>
