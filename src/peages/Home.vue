@@ -11,7 +11,8 @@
     <!-- 搜索框 -->
     <van-search shape="round" background="#B20D07" :placeholder="tips" show-action disabled>
       <template #action>
-        <div class="login" @click="skipToLogin">登录1.0.0</div>
+        <div class="login" @click="skipToLogin">测试合并代码</div>
+        <div>测试测试合并代码</div>
       </template>
     </van-search>
     <!-- 轮播图 -->
