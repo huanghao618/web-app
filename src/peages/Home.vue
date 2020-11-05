@@ -13,7 +13,7 @@
       <template #action>
         <div class="login" @click="skipToLogin">大萨倒萨倒萨倒萨</div>
         <div>1111达大萨的</div>
-        <div>你好</div>
+        <p>hwllo world</p>
       </template>
     </van-search>
     <!-- 轮播图 -->
