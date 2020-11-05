@@ -11,8 +11,8 @@
     <!-- 搜索框 -->
     <van-search shape="round" background="#B20D07" :placeholder="tips" show-action disabled>
       <template #action>
-        <div class="login" @click="skipToLogin">测试合并代码倒萨倒萨倒萨</div>
-        <div>达萨达大萨的</div>
+        <div class="login" @click="skipToLogin">大萨倒萨倒萨倒萨</div>
+        <div>1111达大萨的</div>
         <div>你好</div>
       </template>
     </van-search>
