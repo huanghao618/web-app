@@ -1,10 +1,9 @@
-import {getCartList} from "@/utils/api"
-export default{
+export default {
     namespaced: true,
-    state:{},
-    getters:{
-        
+    state: {},
+    getters: {
+
     },
-    mutations:{},
-    actions:{}
-}
+    mutations: {},
+    actions: {}
+};

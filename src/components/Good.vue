@@ -1,25 +1,28 @@
 <template lang="html">
-<div class="good">
-  <div class="box">
-    <img :src="good.img" @touchstart='skipToDetail'>
+  <div class="good">
+    <div class="box">
+      <img
+        :src="good.img"
+        @touchstart="skipToDetail"
+      >
+    </div>
   </div>
-</div>
 </template>
 
 <script>
 export default {
-  props: {
-    good: {
-      type: Object,
-      required: true
+    props: {
+        good: {
+            type: Object,
+            required: true
+        }
+    },
+    methods: {
+        skipToDetail() {
+            this.$router.push(`/detail/${this.good._id}`);
+        }
     }
-  },
-  methods: {
-    skipToDetail() {
-      this.$router.push('/detail/'+this.good._id)
-    }
-  }
-}
+};
 </script>
 
 <style lang="scss" scoped>

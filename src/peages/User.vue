@@ -2,16 +2,16 @@
   <div>
     <h1>我的1</h1>
     <!-- 底部 -->
-    <TabBar></TabBar>
+    <TabBar />
   </div>
 </template>
 <script>
 export default {
-  components:{
+  components: {
     //  引入公共vue
-    TabBar: ()=>import('@/components/Tabbar.vue'),
-    }
+
+    TabBar: () => import('@/components/Tabbar.vue'),
+  },
 };
 </script>
-<style lang='scss' scoped>
-</style>
+<style lang="scss" scoped></style>

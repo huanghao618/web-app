@@ -19,21 +19,24 @@
     </div>
     <!-- 宫格 -->
     <div class="find-right">
-      <div v-for="i in 20" :key="i">
+      <div
+        v-for="i in 20"
+        :key="i"
+      >
         <van-grid column-num="3">
           <van-grid-item>
             <template>
               <div class="find-good">
-              <van-image src="https://img.yzcdn.cn/vant/cat.jpeg" />
-              <div>文字</div>
+                <van-image src="https://img.yzcdn.cn/vant/cat.jpeg" />
+                <div>文字</div>
               </div>
             </template>
           </van-grid-item>
           <van-grid-item>
             <template>
               <div class="find-good">
-              <van-image src="https://img.yzcdn.cn/vant/cat.jpeg" />
-              <div>文字</div>
+                <van-image src="https://img.yzcdn.cn/vant/cat.jpeg" />
+                <div>文字</div>
               </div>
             </template>
           </van-grid-item>
@@ -41,36 +44,35 @@
           <van-grid-item>
             <template>
               <div class="find-good">
-              <van-image src="https://img.yzcdn.cn/vant/cat.jpeg" />
-              <div>文字</div>
+                <van-image src="https://img.yzcdn.cn/vant/cat.jpeg" />
+                <div>文字</div>
               </div>
             </template>
           </van-grid-item>
-
         </van-grid>
       </div>
     </div>
     <!-- 底部 -->
-    <TabBar></TabBar>
+    <TabBar />
   </div>
 </template>
 <script>
-import { Sidebar, SidebarItem, Grid, GridItem, Image } from "vant";
+import { Sidebar, SidebarItem, Grid, GridItem, Image } from 'vant';
 export default {
-  components: {
+    components: {
     //  引入公共vue
-    TabBar: () => import("@/components/Tabbar.vue"),
-    [Sidebar.name]: Sidebar,
-    [SidebarItem.name]: SidebarItem,
-    [Grid.name]: Grid,
-    [GridItem.name]: GridItem,
-    [Image.name]: Image
-  },
-  data() {
-    return {
-      activeKey: 0
-    };
-  }
+        TabBar: () => import('@/components/Tabbar.vue'),
+        [Sidebar.name]: Sidebar,
+        [SidebarItem.name]: SidebarItem,
+        [Grid.name]: Grid,
+        [GridItem.name]: GridItem,
+        [Image.name]: Image
+    },
+    data() {
+        return {
+            activeKey: 0
+        };
+    }
 };
 </script>
 <style lang='scss' scoped>
