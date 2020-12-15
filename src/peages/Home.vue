@@ -11,9 +11,6 @@
     <!-- 搜索框 -->
     <van-search shape="round" background="#B20D07" :placeholder="tips" show-action disabled>
       <template #action>
-        <div class="login" @click="skipToLogin">大萨倒萨倒萨倒萨</div>
-        <div>1111达大萨的</div>
-        <p>hwllo world</p>
       </template>
     </van-search>
     <!-- 轮播图 -->
